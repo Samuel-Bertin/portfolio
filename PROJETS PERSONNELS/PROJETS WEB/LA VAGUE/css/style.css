@@ -1,0 +1,797 @@
+/*GENERAL*/
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+body {
+
+  background: url(/images/BACKGROUND.png);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-color: #006DAB;
+  font-size: 16px;
+
+
+}
+
+/*TYPOGRAPHY*/
+
+/* MAIN SECTION */
+
+.main__section-title {
+ /* Surfez sur vos p’tits creux. */
+
+
+
+position: absolute;
+
+left: 40vw;
+top: 35vh;
+width: 52%;
+
+
+/* TITLE */
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 3.5em;
+line-height: 1.1em;
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+/* BLANC */
+
+color: #F9F9F9;
+/*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);*/
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+.main__section-text {
+  /* WEBSITE DESCRIPTION */
+
+
+position: absolute;
+left: 40vw;
+top: 50vh;
+width: 50%;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 1.5em;
+line-height: 140%;
+/* or 36px */
+
+letter-spacing: 0.01em;
+
+color: #FFFFFF;
+
+/*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+
+.main__section-address {
+  /* 2 ROUTE DU QUAI FERRY, NOUMEA SUD, 98857 NOUVELLE-CALEDONIE */
+
+
+position: absolute;
+z-index: 1;
+left: 50%;
+transform: translateX(-50%);
+top: calc(100vh - 60px);
+
+/* BODY COPY */
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 140%;
+text-transform: uppercase;
+/* or 22px */
+
+letter-spacing: 0.02em;
+
+/* LIGHT */
+
+color: #FAFCFD;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+
+@media (max-width: 768px) {
+
+  .main__section-title {
+    /* Surfez sur vos p’tits creux. */
+   
+   
+   
+   position: absolute;
+   
+   left: 40vw;
+   top: 35vh;
+   width: 50%;
+   
+   
+   /* TITLE */
+   
+   font-family: Work Sans;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 3em;
+   line-height: 1.1em;
+   /* identical to box height */
+   
+   letter-spacing: -0.04em;
+   
+   /* BLANC */
+   
+   color: #F9F9F9;
+   /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);*/
+   
+   /* Inside Auto Layout */
+   
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 10px 0px;
+   }
+
+  .main__section-text {
+    /* WEBSITE DESCRIPTION */
+  
+  
+  position: absolute;
+  left: 40vw;
+  top: 50vh;
+  width: 50%;
+  
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 140%;
+  /* or 36px */
+  
+  letter-spacing: 0.01em;
+  
+  color: #FFFFFF;
+  
+  /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  }
+}
+
+@media (max-width: 622px) {
+
+  .main__section-title {
+    /* Surfez sur vos p’tits creux. */
+   
+   
+   
+   position: absolute;
+   
+   left: 40vw;
+   top: 35vh;
+   width: 50%;
+   
+   
+   /* TITLE */
+   
+   font-family: Work Sans;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 2.5em;
+   line-height: 1.1em;
+   /* identical to box height */
+   
+   letter-spacing: -0.04em;
+   
+   /* BLANC */
+   
+   color: #F9F9F9;
+   /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);*/
+   
+   /* Inside Auto Layout */
+   
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 10px 0px;
+   }
+
+  .main__section-text {
+    /* WEBSITE DESCRIPTION */
+  
+  
+  position: absolute;
+  left: 40vw;
+  top: 50vh;
+  width: 50%;
+  
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 120%;
+  /* or 36px */
+  
+  letter-spacing: 0.01em;
+  
+  color: #FFFFFF;
+  
+  /*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+  }
+  .main__section-address {
+    /* 2 ROUTE DU QUAI FERRY, NOUMEA SUD, 98857 NOUVELLE-CALEDONIE */
+  
+  
+  position: absolute;
+  left: 50%;
+  top: calc(100% - 60px);
+  transform: translateX(-25%);
+  
+  /* BODY COPY */
+  
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.5em;
+  line-height: 140%;
+  text-transform: uppercase;
+  /* or 22px */
+  
+  letter-spacing: 0.02em;
+  
+  /* LIGHT */
+  
+  color: #FAFCFD;
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+  }
+}
+
+.text-logo {
+
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+
+/* identical to box height */
+
+letter-spacing: -0.04em;
+
+}
+
+.nav-item {
+  /* NAV ITEM */
+
+font-family: 'Work Sans', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+
+nav .navbar-nav li a{
+  color: #000 !important;
+  margin: 0 1.62em;
+  }
+
+nav .navbar-nav li a:hover{
+    
+    font-weight: 700;
+    }
+
+/* CARD CSS*/
+
+.card {
+
+  padding: 3em;
+  margin:3em 0;
+  border-radius: 1.5em;
+  z-index: 2;
+}
+
+.card-title {
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 80px;
+  /* identical to box height */
+  
+  letter-spacing: -0.04em;
+
+}
+.card-text {
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 140%;
+
+  margin-bottom: 0;
+
+}
+
+.card-img-box {
+  background: url(/images/SNACK.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 250px;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1em 1em;
+
+ 
+}
+
+@media (min-width: 992px) {
+  .card-img-box {
+    background: url(/images/SNACK.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    min-height: 250px;
+  
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0em 0em;
+    transform : translateX(-5%);
+  
+   
+  }
+}
+
+.col-lg-12 {
+
+  margin-top: 1em;
+}
+
+/* MENU */
+
+.menu-item {
+
+  text-align: center;
+  margin: 3em auto;
+}
+
+.item-name {
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 1.62em;
+line-height: 140%;
+/* or 36px */
+
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+text-decoration-line: underline;
+
+color: #000000;
+}
+
+.item-description {
+  font-family: Work Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 1em;
+line-height: 140%;
+/* or 22px */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.ingredients {
+  font-family: Work Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 0.75em;
+line-height: 140%;
+/* or 14px */
+
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+}
+
+.regime {
+  font-family: Work Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 0.6em;
+line-height: 140%;
+/* or 14px */
+
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+
+color: #000000;
+}
+
+.price {
+
+  font-family: Work Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 1em;
+line-height: 140%;
+/* or 22px */
+
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #000000;
+
+}
+
+/*MENU NAVIGATION */
+
+ul#myTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.menu__section a.nav-link {
+  font-size: 0.6em;
+  color: #767676;
+}
+
+
+/* MORE CSS */
+
+.offset-right-12 {
+  margin-right: 100%;
+}
+.offset-right-11 {
+  margin-right: 91.66666667%;
+}
+.offset-right-10 {
+  margin-right: 83.33333333%;
+}
+.offset-right-9 {
+  margin-right: 75%;
+}
+.offset-right-8 {
+  margin-right: 66.66666667%;
+}
+.offset-right-7 {
+  margin-right: 58.33333333%;
+}
+.offset-right-6 {
+  margin-right: 50%;
+}
+.offset-right-5 {
+  margin-right: 41.66666667%;
+}
+.offset-right-4 {
+  margin-right: 33.33333333%;
+}
+.offset-right-3 {
+  margin-right: 25%;
+}
+.offset-right-2 {
+  margin-right: 16.66666667%;
+}
+.offset-right-1 {
+  margin-right: 8.33333333%;
+}
+.offset-right-0 {
+  margin-right: 0;
+}
+@media (min-width: 576px) {
+  .offset-sm-right-12 {
+    margin-right: 100%;
+  }
+  .offset-sm-right-11 {
+    margin-right: 91.66666667%;
+  }
+  .offset-sm-right-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-sm-right-9 {
+    margin-right: 75%;
+  }
+  .offset-sm-right-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-sm-right-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-sm-right-6 {
+    margin-right: 50%;
+  }
+  .offset-sm-right-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-sm-right-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-sm-right-3 {
+    margin-right: 25%;
+  }
+  .offset-sm-right-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-sm-right-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-sm-right-0 {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .offset-md-right-12 {
+    margin-right: 100%;
+  }
+  .offset-md-right-11 {
+    margin-right: 91.66666667%;
+  }
+  .offset-md-right-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-md-right-9 {
+    margin-right: 75%;
+  }
+  .offset-md-right-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-md-right-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-md-right-6 {
+    margin-right: 50%;
+  }
+  .offset-md-right-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-md-right-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-md-right-3 {
+    margin-right: 25%;
+  }
+  .offset-md-right-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-md-right-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-md-right-0 {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .offset-lg-right-12 {
+    margin-right: 100%;
+  }
+  .offset-lg-right-11 {
+    margin-right: 91.66666667%;
+  }
+  .offset-lg-right-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-lg-right-9 {
+    margin-right: 75%;
+  }
+  .offset-lg-right-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-lg-right-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-lg-right-6 {
+    margin-right: 50%;
+  }
+  .offset-lg-right-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-lg-right-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-lg-right-3 {
+    margin-right: 25%;
+  }
+  .offset-lg-right-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-lg-right-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-lg-right-0 {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .offset-xl-right-12 {
+    margin-right: 100%;
+  }
+  .offset-xl-right-11 {
+    margin-right: 91.66666667%;
+  }
+  .offset-xl-right-10 {
+    margin-right: 83.33333333%;
+  }
+  .offset-xl-right-9 {
+    margin-right: 75%;
+  }
+  .offset-xl-right-8 {
+    margin-right: 66.66666667%;
+  }
+  .offset-xl-right-7 {
+    margin-right: 58.33333333%;
+  }
+  .offset-xl-right-6 {
+    margin-right: 50%;
+  }
+  .offset-xl-right-5 {
+    margin-right: 41.66666667%;
+  }
+  .offset-xl-right-4 {
+    margin-right: 33.33333333%;
+  }
+  .offset-xl-right-3 {
+    margin-right: 25%;
+  }
+  .offset-xl-right-2 {
+    margin-right: 16.66666667%;
+  }
+  .offset-xl-right-1 {
+    margin-right: 8.33333333%;
+  }
+  .offset-xl-right-0 {
+    margin-right: 0;
+  }
+}
+
+/* CONTACT FORM */
+/*CONTACT SECTION */
+
+.telephone-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: -0.04em;
+  margin-top: 1em;
+
+}
+
+.telephone-number {
+  margin-left: 1em;
+  
+/* PRIMARY */
+
+color: #006DAB;
+}
+
+#contact-form {
+
+  padding: 0;
+  border-radius: 0.5rem;
+  color: #000;
+  margin-top: 1em;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2em;
+  /*line-height: 1.62em;*/
+  letter-spacing: 0.01em;
+}
+
+#contact-form label {
+
+  font-weight: 500;
+  font-size: 1em;
+
+}
+
+.form-control {
+
+  font-size: 0.75em;
+
+}
+
+.blue {
+
+  color: #006DAB;
+
+}
+
+.warning {
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.comments {
+
+  font-size: 0.7em;
+  color: #666;
+  font-style: italic;
+  height: 0.7rem;
+
+}
+
+.btn-1 {
+
+  margin: 0 auto 1rem;
+  display: block;
+  background: #006DAB;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.7rem;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.btn-1:hover {
+  background: #B4D4D3;
+  color: #fff; 
+}
+
+.thank-you {
+
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* JAVASCRIPT */
+
+.tab-content.hide {
+  display : none;
+}
+
+.tab-content.active{
+  display: block;
+}

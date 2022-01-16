@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  background: #464093;
+  background: -webkit-gradient(linear, left bottom, left top, from(#464093), color-stop(26%, #2765a6), to(#345ab3));
+  background: linear-gradient(0deg, #464093 0%, #2765a6 26%, #345ab3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#464093",endColorstr="#345ab3",GradientType=1);
+}
+
+.main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.main-div .hero {
+  min-width: 100vw;
+}
+
+.main-div .hero .hero-title {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+}
+
+.main-div .hero .hero-button {
+  margin: 1em 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-container {
+  background: #fff;
+  height: 100vh;
+  width: 330px;
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 2.62em 2em;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  position: relative;
+}
+
+.main-container .closeform {
+  font-size: 1.8em;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: #ccc;
+}
+
+.main-container .closeform:hover {
+  color: #6421a3;
+}
+
+.main-container header {
+  font-size: 2.3em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+.main-container .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 0 1.5em 0;
+}
+
+.main-container .progress-bar .step {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.main-container .progress-bar .step p {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main-container .progress-bar .step p.active {
+  color: #3994fd;
+}
+
+.main-container .progress-bar .step .bullet {
+  position: relative;
+  height: 1.62em;
+  width: 1.62em;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.main-container .progress-bar .step .bullet.active {
+  border-color: #3994fd;
+}
+
+.main-container .progress-bar .step .bullet.active span {
+  display: none;
+}
+
+.main-container .progress-bar .step .bullet::before,
+.main-container .progress-bar .step .bullet::after {
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  right: -38px;
+  height: 3px;
+  width: 32px;
+  background: #39608d;
+}
+
+.main-container .progress-bar .step .bullet.active::after {
+  background: #3994fd;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: animate cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation: animate cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+.main-container .progress-bar .step span {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.62em;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-container .progress-bar .step .check {
+  position: absolute;
+  font-size: 1em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 46px;
+  left: 33px;
+  display: none;
+}
+
+.main-container .progress-bar .step .check.active {
+  display: block;
+  color: #3994fd;
+}
+
+.main-container .progress-bar .step:last-child .bullet::before,
+.main-container .progress-bar .step:last-child .bullet::after {
+  display: none;
+}
+
+.main-container .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin-top: -1.2em;
+  border-radius: 20px;
+  background: #3994fd;
+  color: #ddd;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.3 ease;
+  transition: 0.3 ease;
+}
+
+button .prev {
+  margin-right: 0.2em;
+  font-size: 1em;
+}
+
+button .next {
+  margin-left: 0.2em;
+}
+
+button:hover {
+  background: #2d343d;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+}
+
+.form-container form .page {
+  width: 25%;
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-container form .page .page-title {
+  text-align: left;
+  font-size: 1.62em;
+  font-weight: 500;
+}
+
+.form-container form .page .conditions-title {
+  margin-bottom: 1.62em;
+}
+
+.form-container form .page .field {
+  height: 2.62em;
+  width: 100%;
+  margin: 4em 0;
+  position: relative;
+}
+
+.form-container form .page .field .comments {
+  position: absolute;
+  color: red;
+  top: 45px;
+  left: 200px;
+  font-size: 0.8em;
+}
+
+.form-container form .page .field .success {
+  position: relative;
+  top: -33px;
+  left: 107px;
+  color: #39cc26;
+  display: none;
+}
+
+.form-container form .page .field .error {
+  position: relative;
+  top: -33px;
+  left: 123px;
+  color: #cc3126;
+  display: none;
+}
+
+.form-container form .page .field .radio-choices {
+  -webkit-transform: translate(2.62em, -1em);
+          transform: translate(2.62em, -1em);
+}
+
+.form-container form .page .field label {
+  position: absolute;
+  top: -2em;
+  font-weight: 500;
+}
+
+.form-container form .page .field label.radio-label-title {
+  position: relative;
+  right: 5.75em;
+  top: -1.8em;
+}
+
+.form-container form .page .field label.radio-label {
+  position: relative;
+  top: 0;
+  right: 2.62em;
+}
+
+.form-container form .page .field label.checkbox-label {
+  position: relative;
+  top: 0;
+}
+
+.form-container form .page .field input {
+  padding-left: 1em;
+}
+
+.form-container form .page .field input,
+.form-container form .page .field select,
+.form-container form .page .field textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+.form-container form .page .field input.radio,
+.form-container form .page .field select.radio,
+.form-container form .page .field textarea.radio {
+  height: unset;
+  width: unset;
+}
+
+.form-container form .page .field input.checkbox,
+.form-container form .page .field select.checkbox,
+.form-container form .page .field textarea.checkbox {
+  height: unset;
+  width: unset;
+}
+
+/* .field,
+     .conditions {
+         height: 2.62em;
+         width: 20em;
+         margin: 2.62em 0;
+         position: relative;
+
+         input,
+         select,
+         textarea {
+             height: 100%;
+             width: 100%;
+             border: 1px solid lightgrey;
+             &.radio {
+                height: unset;
+                width: unset;
+             }
+             &.checkbox {
+                 height: unset;
+                 width: unset;
+             }
+         }
+
+         label {
+             position: absolute;
+             top: -2em;
+             font-weight: 500;
+
+             &.radio-label {
+                position: relative;
+                top: 0;
+                right: 2.62em;}
+
+             &.checkbox-label {
+                 position: relative;
+                 top: 0;}
+            }
+        
+     
+
+            button {
+                width: 100%;
+                height: calc(100%+1em);
+                margin-top: -1.2em;
+                border-radius: 0.2em;
+                background: #4f76a8;
+                color: #ddd;
+                font-size: 1.2em;
+                padding: 0.5em;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 0.3 ease;
+
+                .prev {
+                    margin-right: 0.2em;
+                    font-size: 1em;
+                }
+
+                .next {
+                    margin-left: 0.2em;
+                }
+            }
+
+            button:hover {
+                background: #3f5f8a;
+                font-weight: 600;
+            }
+    }
+
+    .buttons button {
+            margin-top: -1.2em !important;
+    }
+
+    .buttons {
+            display: flex;
+    }
+       
+}
+
+}
+*/
+/*# sourceMappingURL=main.css.map */

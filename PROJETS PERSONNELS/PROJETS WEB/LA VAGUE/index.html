@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>La Vague - Snack</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-xl navbar-light" style="background-color: #6cb1ab;">
+            <a class="navbar-brand text-logo offset-lg-1 home-nav" href="#home" >
+                
+                LA VAGUE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav offset-lg-right-1 ml-auto">
+                <li class="nav-item" >
+                  <a class="nav-link snack-nav" href="#lesnack">Le Snack <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Le Menu
+                  </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link contact-nav" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>-->
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="main__section tab-content active" id="home">
+                <div class="main__section-div">
+                    <h1 class="main__section-title main-title shadow">
+                        Surfez sur vos p'tits creux.
+                    </h1>
+                    <p class="main__section-text strong-body shadow">
+                        Croissant pudding gingerbread gummies cookie oat cake chocolate liquorice. Cookie gummies toffee donut pudding. Sesame snaps halvah cotton candy bonbon chocolate sweet macaroon cake. Fruitcake toffee biscuit fruitcake jujubes tootsie roll gummies. Apple pie biscuit jujubes. 
+                    </p>
+                </div>
+                
+            </section>
+
+            <section class="about__section tab-content hide" id="lesnack">
+                <div class="card">
+                    <h1 class="card-title">LE SNACK<span class="subtitle"></span></h1>
+                    <div class="row">
+                        <p class="col-lg-6 card-text">
+                            Sweet roll sweet dragée cotton candy marzipan gummi bears lollipop. Croissant ice cream toffee chocolate cake icing macaroon chocolate bar chocolate bar oat cake.
+                            Biscuit brownie bear claw. Chocolate cake jelly-o pie tiramisu tootsie roll sweet roll cupcake.
+                        </p>
+                        <!--<img src="/images/SNACK.jpg" alt="Photo du Snack" class="col-md-6 card-img">-->
+                        <div class="col-lg-6 card-img-box">
+                            <!--<img src="/images/SNACK.jpg" alt="Photo du Snack">-->
+                        </div>
+                        <p class="col-lg-12 card-text">
+                            Pastry biscuit cupcake oat cake jelly apple pie croissant. Cheesecake halvah donut gummies bear claw tart. Danish tootsie roll icing oat cake. Oat cake topping cupcake candy canes chocolate powder pie jelly beans. Sesame snaps tootsie roll candy canes. Jelly beans brownie cotton candy soufflé oat cake cheesecake. Donut halvah candy sugar plum. Biscuit tiramisu sweet roll marzipan dragée bear claw halvah marzipan croissant. Candy biscuit bonbon.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu__section tab-content hide" id="lemenu">
+                <div class="card">
+                    <h1 class="card-title">LE MENU - <span class="subtitle">Entrées</span></h1>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="entrees-tab" data-toggle="tab" href="#entrees" role="tab" aria-controls="entrees" aria-selected="true">Entrées</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="burgers-tab" data-toggle="tab" href="#burgers" role="tab" aria-controls="burgers" aria-selected="false">Burgers</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="poissons-tab" data-toggle="tab" href="#poissons" role="tab" aria-controls="poissons" aria-selected="false">Poissons</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="barquettes-tab" data-toggle="tab" href="#barquettes" role="tab" aria-controls="barquettes" aria-selected="false">Barquettes</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="salades-tab" data-toggle="tab" href="#salades" role="tab" aria-controls="salades" aria-selected="false">Salades</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="boissons-tab" data-toggle="tab" href="#boissons" role="tab" aria-controls="boissons" aria-selected="false">Boissons</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                               
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="burgers" role="tabpanel" aria-labelledby="burgers-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="poissons" role="tabpanel" aria-labelledby="poissons-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-9 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="barquettes" role="tabpanel" aria-labelledby="barquettes-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="salades" role="tabpanel" aria-labelledby="salades-tab">
+                            <div class="row">
+                                <div class="col-lg-9  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="boissons" role="tabpanel" aria-labelledby="poissons-tab">
+                            <div class="row">
+                                <div class="col-lg-6  menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                                <div class="col-lg-6 offset-lg-2 menu-item">
+                                    <h3 class="item-name">Item Name</h3>
+                                    <p class="item-description">Short item description</p>
+                                    <p class="ingredients">Ingrédient 1, Ingrédient 2, Ingrédient 3 </p>
+                                    <p class="regime">Végétarien</p>
+                                    <p class="price">2500 XPF</p>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                </div>
+            </section>
+
+            <section class="contact__section tab-content hide" id="contact">
+                <div class="card">
+                    <h1 class="card-title">CONTACT</span></h1>
+                    <h4 class="contact-us">Contactez-nous pour toute(s) question(s) ou réservation(s).</h4>
+                    <div class="telephone-display">
+                        <i class="fas fa-phone"></i>
+                        <p class="telephone-number">+687 99.99.99</p>
+                    </div>
+
+                    <form action="" id="contact-form" method="post" role="form">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <label>Nom <span class="blue">*</span></label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Votre Nom" >
+                                <p class="comments"></p>
+                            
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label>Prénom <span class="blue">*</span></label>
+                                <input type="text" name="surname"  id="surname" class="form-control" placeholder="Votre Prénom">
+                                <p class="comments"></p>
+                            
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <label>Email <span class="blue">*</span></label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Votre Mail" >
+                                <p class="comments"></p>
+                            
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label>Téléphone <span class="blue"></span></label>
+                                <input type="phone"  name="phone" class="form-control" placeholder="Votre Téléphone" >
+                                <p class="comments phone-check"></p>
+                            
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <label>Message <span class="blue"></span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4" ></textarea>
+                                <p class="comments"></p>
+                            
+                            </div>
+
+                            <div class="col-md-12 blue">
+
+                                <p class="warning">* Ces informations sont requises.</p>
+                            
+                            </div>
+
+                            <div class="col-md-12">
+
+                                <input type="submit" class="btn btn-1" value="Envoyer">
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </section>
+
+            <div class="adress">
+                <p class="main__section-address">
+                    2 Route du Quai Ferry - Nouméa Sud - 98 857 Nouvelle-Calédonie
+                </p>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
