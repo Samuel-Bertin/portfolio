@@ -1,0 +1,7 @@
+import javax.swing.JFrame;
+
+public class FenetreMastermind extends JFrame {
+	
+	private VueMastermind;
+	
+}

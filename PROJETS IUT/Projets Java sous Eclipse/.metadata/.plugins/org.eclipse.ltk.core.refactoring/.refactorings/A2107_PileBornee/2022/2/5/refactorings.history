@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;A2107_PileBornee&apos;&#x0D;&#x0A;- Original project: &apos;A2107_PileBornee&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ClientPileBornee.java&#x0D;&#x0A;     EmptyStackException.java&#x0D;&#x0A;     PileBornee.java" description="Delete elements" element1="/src&lt;{EmptyStackException.java" element2="/src&lt;{ClientPileBornee.java" element3="/src&lt;{PileBornee.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1643958996719" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,39 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestBilletTrain {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testDistanceParcourueAuMoins2km() {
+		BilletTrain sncf = new BilletTrain(2F);
+	}
+
+	@Test
+	public void testTarifBarêmeBordPlusde2kms() {
+		BilletTrain sncf = new BilletTrain(2.5F);
+		assertEquals(10, sncf.getTarif(true));
+	}
+
+	@Test
+	public void testTarifBarêmeContrôlePlusde2kms() {
+		BilletTrain sncf = new BilletTrain(2.5F);
+		assertEquals(50, sncf.getTarif(false));
+	}
+	
+	@Test
+	public void testTarifBaremeBordPlusde25kms() {
+		BilletTrain sncf = new BilletTrain(30F);
+		assertEquals(50, sncf.getTarif(false));
+	}
+}

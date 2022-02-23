@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class DecompositionEnFacteursPremiers {
+	List<Integer> factors;
+
+	public List<Integer> compute(int n) {
+		
+		this.factors = new ArrayList<Integer>();
+		
+		if (n > 1) {
+			while (n%2 == 0) {
+				this.factors.add(2);
+				n = n/2;
+			}
+			if (n == 3) {
+				this.factors.add(3);
+			}
+		} 
+		return factors;
+	}
+}

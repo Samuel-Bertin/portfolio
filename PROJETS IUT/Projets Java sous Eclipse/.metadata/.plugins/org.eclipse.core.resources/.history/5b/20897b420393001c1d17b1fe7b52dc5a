@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestLettre {
+	
+	Lettre l;
+
+	@Before
+	public void setUp() throws Exception {
+		this.l = new Lettre(String origine, String destination, int codepostal , int poids , int volume, int urgence);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		l= null;
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

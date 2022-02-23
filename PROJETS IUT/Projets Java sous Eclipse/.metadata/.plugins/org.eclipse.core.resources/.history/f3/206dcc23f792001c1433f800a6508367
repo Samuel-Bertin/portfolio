@@ -1,0 +1,36 @@
+
+public class BilletTrain {
+	
+	float distance;
+	
+	public BilletTrain(float f) throws IllegalArgumentException {
+		if (f <= 2F ) {
+			throw new IllegalArgumentException("Distance minimale de 2 km.");
+		} this.distance = f;
+	}
+	
+	public int getTarif(float f) {
+		if (f <= 25F) {
+			return 10;
+		} else {
+			if (f <=50) {
+				return 15;
+			} else {
+				if(f <= 100) {
+					return 25;
+				} else {
+					if (f<= 150) {
+						return 35;
+					} else {
+						if (f <= 300) {
+							return 60;
+						} else {
+							return 90;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

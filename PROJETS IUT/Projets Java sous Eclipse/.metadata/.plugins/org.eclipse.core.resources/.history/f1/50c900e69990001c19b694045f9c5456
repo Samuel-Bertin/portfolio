@@ -1,0 +1,26 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestFizzBuzz {
+	
+	public int [] tab;
+
+	@Before
+	public void setUp() throws Exception {
+		tab = new int[100];
+		remplir(tab);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testFizzBuzzInitial() {
+		assertEquals(3,tab[2]);
+	}
+
+}

@@ -1,0 +1,69 @@
+
+public class BilletTrain {
+	
+	float distance;
+	
+	public static final float[] DISTANCE = {2F, 25F, 50F, 100F, 150F, 300F};
+	public static final int[] BAREMEBORD = {10, 15, 25, 35, 60, 90};
+	public static final int[] BAREMECONTROLE = {50, 50, 50, 50, 90, 120};
+	
+	public BilletTrain(float f) throws IllegalArgumentException {
+		if (f <= 2F ) {
+			throw new IllegalArgumentException("Distance minimale de 2 km.");
+		} this.distance = f;
+	}
+	
+	public int getTarif(boolean b) {
+		if (b) {
+			if (this.distance <= 25F){
+				return 10;
+			} else {
+				if (this.distance <=50) {
+					return 15;
+				} else {
+					if(this.distance <= 100) {
+						return 25;
+					} else {
+						if (this.distance<= 150) {
+							return 35;
+						} else {
+							if (this.distance <= 300) {
+								return 60;
+							} else {
+								return 90;
+							}
+						}
+					}
+				}
+			}
+		} else {
+			if (this.distance <= 25F){
+				return 50;
+			} else {
+				if (this.distance <=50) {
+					return 50;
+				} else {
+					if(this.distance <= 100) {
+						return 50;
+					} else {
+						if (this.distance<= 150) {
+							return 50;
+						} else {
+							if (this.distance <= 300) {
+								return 90;
+							} else {
+								return 120;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	private int getTarifAvecTable(int[] tableTarif) {
+		if (tableTarif.equals(BAREMEBORD)) {
+			
+		}
+	}
+}

@@ -1,0 +1,60 @@
+
+public class BilletTrain {
+	
+	float distance;
+	
+	public BilletTrain(float f) throws IllegalArgumentException {
+		if (f <= 2F ) {
+			throw new IllegalArgumentException("Distance minimale de 2 km.");
+		} this.distance = f;
+	}
+	
+	public int getTarif(boolean b) {
+		if (b) {
+			if (this.distance <= 25F){
+				return 10;
+			} else {
+				if (this.distance <=50) {
+					return 15;
+				} else {
+					if(this.distance <= 100) {
+						return 25;
+					} else {
+						if (this.distance<= 150) {
+							return 35;
+						} else {
+							if (this.distance <= 300) {
+								return 60;
+							} else {
+								return 90;
+							}
+						}
+					}
+				}
+			}
+		} else {
+			if (this.distance <= 25F){
+				return 10;
+			} else {
+				if (this.distance <=50) {
+					return 15;
+				} else {
+					if(this.distance <= 100) {
+						return 25;
+					} else {
+						if (this.distance<= 150) {
+							return 35;
+						} else {
+							if (this.distance <= 300) {
+								return 60;
+							} else {
+								return 90;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

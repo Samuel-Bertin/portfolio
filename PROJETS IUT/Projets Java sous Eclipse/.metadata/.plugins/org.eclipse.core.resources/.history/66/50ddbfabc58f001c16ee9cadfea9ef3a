@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Mastermain {
+	
+	static final int TAILLE = 4;
+
+	public static void main(String[] args) {
+		
+		ModeleMastermind modele = new ModeleMastermind();
+		int tabChiffres[] = new int[TAILLE];
+		int essais = 0;
+		boolean pasEncoreGagne = true;
+		
+		Scanner input = new Scanner(System.in);
+		
+		modele.genererCombinaison();
+		
+		
+		
+		if (modele.nbChiffresBienPlaces(tabChiffres) != 4) {
+			System.out.println("Perdu");
+		} else {
+			System.out.println("Gagné");
+			
+		}
+		
+		input.close();
+	}
+
+}

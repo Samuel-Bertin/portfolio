@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		int tabChiffres[] = new int[4];
+		int essais = 0;
+		boolean pasEncoreGagne = true;
+		
+		Scanner input = new Scanner(System.in);
+		
+		ModeleMastermind modele = new ModeleMastermind();
+		modele.genererCombinaison();
+		
+		while (essais < 12 || pasEncoreGagne) {
+			
+			modele.getCombinaison();
+			System.out.println(modele);
+			essais++;
+			
+			for (int i = 0; i < 4; i++) {
+				System.out.println("Saisir valeur "+(i+1));
+				tabChiffres[i] = input.nextInt();
+			}
+			
+			for (int i = 0; i < 4 ; i++) {
+				while (tabChiffres[i] == modele.getCombinaison()[i]) {
+					pasEncoreGagne = false;
+				}
+				
+			}
+			
+		}
+		
+		input.close();
+	}
+
+}

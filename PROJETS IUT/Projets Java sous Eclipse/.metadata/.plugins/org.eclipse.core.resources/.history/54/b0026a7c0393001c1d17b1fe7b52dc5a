@@ -1,0 +1,20 @@
+
+public class Lettre {
+	
+	private String origine;
+	private String destination;
+	private int codePostal;
+	private int poids;
+	private int volume;
+	private int urgence;
+	
+	public Lettre(String origine, String destination, int codepostal , int poids , int volume, int urgence) {
+		this.origine = origine;
+		this.destination = destination;
+		this.codePostal = codepostal;
+		this.poids = poids;
+		this.volume = volume;
+		this.urgence = urgence;
+	}
+	
+}

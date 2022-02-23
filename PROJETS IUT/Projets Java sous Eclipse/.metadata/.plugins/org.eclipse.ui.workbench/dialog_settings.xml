@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ZipFile"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="true"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\BRS1468A\Downloads\R2_03_TP18.zip"/>
+			<item value="C:\Users\BRS1468A\Downloads\ApplicationCouleur.zip"/>
+			<item value="C:\Users\BRS1468A\Downloads\R2_03_TP10.ZIP"/>
+			<item value="D:\DUT\WINDOWS\COURS\Oriente Objets\A2107 - Programmation\TP\Ressources\R2_03_TP4.ZIP"/>
+			<item value="D:\DUT\WINDOWS\COURS\Algorithme\JAVA\SUJETS TP\TD-TP n°6  Les figures (2ème partie)-20211206\TD-TP n°6\A1108_TP6_ETUDIANTS.zip"/>
+			<item value="C:\Users\BRS1468A\Downloads\A1108_TP5_ETUDIANTS.zip"/>
+			<item value="C:\Users\BRS1468A\Downloads\A1108_TP4_ETUDIANTS.ZIP"/>
+			<item value="C:\Users\BRS1468A\Downloads\Compte.zip"/>
+			<item value="C:\Users\BRS1468A\Documents\DUT INFORMATIQUE AS\TP SAMUEL\Algorithme\JAVA\TD4\Main.zip"/>
+			<item value="C:\Users\BRS1468A\Documents\DUT INFORMATIQUE AS\TP SAMUEL\Algorithme\JAVA\TD4\CompteurDeBase.zip"/>
+			<item value="C:\Users\BRS1468A\Documents\DUT INFORMATIQUE AS\TP SAMUEL\Algorithme\JAVA\TD3 - TAD Durée\Main.zip"/>
+			<item value="C:\Users\BRS1468A\Documents\DUT INFORMATIQUE AS\TP SAMUEL\Algorithme\JAVA\TD-TP n°2  le TAD Tableau[T]-20211022\Tableau.zip"/>
+			<item value="C:\Users\BRS1468A\Documents\DUT INFORMATIQUE AS\TP SAMUEL\Algorithme\JAVA\TD-TP n°2  le TAD Tableau[T]-20211022\RechercheSequentielle.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.junit.wizards.NewTestSuiteCreationWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="D:\DUT\WINDOWS\COURS\Algorithme\JAVA\ECLIPSEDD\CompteBancaire\src"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\BRS1468A\Desktop\PileBornee.zip"/>
+		</list>
+	</section>
+</section>

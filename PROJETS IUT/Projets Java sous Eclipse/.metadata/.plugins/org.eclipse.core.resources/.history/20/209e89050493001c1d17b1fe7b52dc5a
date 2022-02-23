@@ -1,0 +1,27 @@
+
+public class Lettre {
+	
+	private String origine;
+	private String destination;
+	private int codePostal;
+	private int poids;
+	private int volume;
+	private int tauxReco;
+	private int urgence;
+	
+	public Lettre(String origine, String destination, int codepostal , int poids , int volume, int taux, int urgence) {
+		this.origine = origine;
+		this.destination = destination;
+		this.codePostal = codepostal;
+		this.poids = poids;
+		this.volume = volume;
+		this.tauxReco = taux;
+		this.urgence = urgence;
+	}
+
+	public Object affranchir() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

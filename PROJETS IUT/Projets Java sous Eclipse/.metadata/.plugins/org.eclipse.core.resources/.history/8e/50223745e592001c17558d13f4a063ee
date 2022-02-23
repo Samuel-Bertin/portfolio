@@ -1,0 +1,20 @@
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+
+public class FenetreMastermind extends JFrame {
+	
+	private VueMastermind vue;
+	
+	public FenetreMastermind(VueMastermind v) {
+		super("Mastermind");
+		this.vue = v;
+		this.setLayout(new GridLayout(1,1));
+		this.add(new VueJeton());
+		this.setSize(300,300);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.pack();
+		this.setVisible(true);
+		
+	
+}

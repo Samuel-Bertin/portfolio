@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\DUT\COURS\MATIERES\Algorithme\JAVA\ECLIPSEDD\.metadata\.plugins\org.eclipse.jdt.core
+823711121.index

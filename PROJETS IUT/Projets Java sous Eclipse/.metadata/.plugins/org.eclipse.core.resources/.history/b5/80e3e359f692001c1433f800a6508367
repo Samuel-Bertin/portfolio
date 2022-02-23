@@ -1,0 +1,8 @@
+
+public class BilletTrain {
+	
+	public BilletTrain(float f) {
+		
+	}
+	
+}

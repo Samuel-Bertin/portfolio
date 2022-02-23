@@ -1,0 +1,13 @@
+
+public class Lettre {
+	
+	private String origine;
+	private String destination;
+	private int codePostal;
+	private int poids;
+	private int volume;
+	private int urgence;
+	
+	
+	
+}

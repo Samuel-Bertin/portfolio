@@ -1,0 +1,58 @@
+
+public class CompteurKilométriqueTableau implements CompteurKilométrique {
+	
+	//variables
+	private int valeur;
+	
+	// Opérations
+	
+	//Constantes
+	public final CompteurKilométrique COMPTEUR_NUL = new CompteurKilométriqueTableau();
+	
+	// Consultation
+	
+	//retourne la valeur d'un entier
+	public int getEntier() {
+		return this.valeur;
+	}
+	// Modification 
+	//ajoute 1 a la valeur d'un compteur
+	public void ajouterUn() throws IllegalArgumentException {
+		if (this.valeur > 998) {
+			throw new IllegalArgumentException("Valeur maximale du compteur atteinte");
+		}
+		this.valeur += 1;
+	}
+	
+	// Evaluation
+	
+	//retourne vrai si v1 == v2
+	public boolean egal(Compteur c) {
+		if (this.valeur == c.getValeur()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	//retourne vrai si v1 < v2
+	public boolean inf(Compteur c) {
+		if (this.valeur < c.getValeur()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+
+/*Propriétés
+(P1) compteurNul = unCompteur (0)
+(P2) ajouterUn (c) = unCompteur (versEntier(c) + 1)
+(P3) égal (unCompteur (v1), unCompteur (v2)) =
+si v1 = v2 alors vrai sinon faux
+(P4) inf (unCompteur (v1), unCompteur (v2)) =
+si v1 < v2 alors vrai sinon faux
+(P5) versEntier (unCompteur (v)) = v*/
+	
+	
+}

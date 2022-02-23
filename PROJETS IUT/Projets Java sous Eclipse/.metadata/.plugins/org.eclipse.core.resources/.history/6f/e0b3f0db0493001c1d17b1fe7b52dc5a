@@ -1,0 +1,46 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestLettre {
+	
+	Lettre l;
+	Lettre k;
+	Lettre m;
+
+	@Before
+	public void setUp() throws Exception {
+		this.l = new Lettre("A", "B", 31200 , 15 , 10, 0, false);
+		this.k = new Lettre("A", "B", 31200 , 15 , 10, 0, true);
+		this.m = new Lettre("A", "B", 31200 , 15 , 10, 1, false);
+		this.n = new Lettre("A", "B", 31200 , 15 , 10, 1, true);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		l= null;
+	}
+
+	@Test
+	public void testAffranchissementTauxRecoZeroNonUrgente() {
+		assertEquals(0.5, l.affranchir(),0.1);
+	}
+	
+	@Test
+	public void testAffranchissementTauxRecoZeroUrgente() {
+		assertEquals(0.8, k.affranchir(),0.1);
+	}
+	
+	@Test
+	public void testAffranchissementTauxRecoUnNonUrgente() {
+		assertEquals(1, m.affranchir(),0.1);
+	}
+	
+	@Test
+	public void testAffranchissementTauxRecoUnUrgente() {
+		assertEquals(1.3, m.affranchir(),0.1);
+	}
+
+}
