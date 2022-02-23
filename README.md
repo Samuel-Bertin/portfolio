@@ -8,3 +8,8 @@ I-PROJETS PERSONNELS
 Pris d'un fort interet pour la programmation et admiratif de domaine informatique en général je décide à la suite de ces projets de candidater en DUT Informatique à l'IUT Paul Sabatier. J'ai eu la chance d'etre retenu en année spéciale, une session particulière pour les titulaires d'un BAC+2 ou +.
 
 II-PROJETS ET PRATIQUES UNIVERSITAIRES
+
+J'ai inclus les TP ainsi que les TD sur les différents sujets abordés jusqu'a présent. Nous avons utilisé le language Java sur l'environnement Eclipse.
+On retrouve : POO, Modele-Vue/Controleur, Algorithmique Simple, etc.
+
+J'ai également inclu les programmes en Python que j'ai réalisé pour résoudre des problèmes mathématiques. 
