@@ -1,0 +1,902 @@
+/* PROPRIETES GENERALES */
+
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+  border-radius: 1.2em;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+/* [ECRAN PC] */
+/* BODY */
+
+body {
+  background: url("../images/texture.jpeg");
+  background-size: cover;
+}
+
+/* PC - LOGO */
+div.logocont a {
+  display: flex;
+  justify-content: center;
+}
+
+img.logo {
+  margin-top: 25px;
+  width: 27%;
+  height: auto;
+}
+
+/*  PC - WRAPPER */
+#hamnav {
+  width: 90%;
+  margin: 2% 5%;
+  height: 80px;
+}
+
+/* PC - MENU HORIZONTAL */
+#hamitems {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  align-items: center;
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 30px 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 10px;
+  background: grey;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hamitems a:hover {
+  background: #af0d0d;
+}
+
+/*  PC - CACHER LE LOGO */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/*  PC - HEADER */
+header {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: 90%;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*  PC - SECTION */
+
+section.content {
+  width: 90%;
+  margin: 5%;
+  min-height: 75vh;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  padding-bottom: 3em;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+section.content p {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+section.content h2 {
+  margin-top: 1.2em;
+  margin-bottom: 2em;
+}
+
+div.vid {
+  display: flex;
+  justify-content: center;
+}
+
+div.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.section-card {
+  margin: 2em;
+  height: 400px;
+  width: 42.5%;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+div.section-card:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+div.section-card a {
+  text-decoration: none;
+}
+
+#card1 {
+  background: url("../images/CARDS/1.jpeg");
+  background-size: cover;
+}
+
+#card2 {
+  background: url("../images/CARDS/eau.jpeg");
+  background-size: cover;
+}
+
+#card3 {
+  background: url("../images/CARDS/eklec.jpg");
+  background-size: cover;
+}
+
+#card4 {
+  background: url("../images/CARDS/ice.jpg");
+  background-size: cover;
+}
+
+#card5 {
+  background: url("../images/CARDS/dark.jpg");
+  background-size: cover;
+}
+
+#card6 {
+  background: url("../images/CARDS/plante.png");
+  background-size: cover;
+}
+
+div.section-card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+div.section-content {
+  position: relative;
+  top: 50%;
+  margin: 5% auto;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: white;
+  font-size: 3em;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: black;
+}
+
+/* PARTIE SAMUEL - PC */
+
+/*  PC - TABLEAU */
+
+table {
+  margin: auto;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+tr,
+td {
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+/*  PC - TYPES */
+
+div.type {
+  width: 41%;
+  display: flex;
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 2em;
+  margin-bottom: 2.2em;
+  margin-left: 6%;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+div.type-responsive {
+  display: flex;
+}
+
+#acier {
+  background-color: rgba(112, 192, 212, 0.5);
+}
+
+#combat {
+  background-color: rgba(251, 32, 24, 0.5);
+}
+
+#dragon {
+  background-color: rgba(3, 86, 241, 0.5);
+}
+
+#eau {
+  background-color: rgba(42, 138, 248, 0.5);
+}
+
+#elec {
+  background-color: rgba(207, 195, 15, 0.5);
+}
+
+#fee {
+  background-color: rgba(245, 53, 197, 0.5);
+}
+
+#feu {
+  background-color: rgba(255, 158, 1, 0.5);
+}
+
+#glace {
+  background-color: rgba(1, 238, 255, 0.5);
+}
+
+#insecte {
+  background-color: rgba(84, 195, 108, 0.5);
+}
+
+#plante {
+  background-color: rgba(3, 226, 59, 0.5);
+}
+
+#poison {
+  background-color: rgba(183, 1, 255, 0.5);
+}
+
+#psy {
+  background-color: rgba(253, 47, 253, 0.5);
+}
+
+#roche {
+  background-color: rgba(161, 119, 40, 0.5);
+}
+
+#sol {
+  background-color: rgba(216, 184, 132, 0.5);
+}
+
+#spectre {
+  background-color: rgba(19, 3, 160, 0.5);
+}
+
+#tenebre {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#vol {
+  background-color: rgba(111, 220, 253, 0.5);
+}
+
+div.type img {
+  width: 30%;
+}
+
+div.type div.type-desc {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 2em;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.type div.type-desc h3 {
+  margin-bottom: 1em;
+}
+
+div.type div.type-desc p {
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.type div.type-desc p img.type-img {
+  width: auto;
+  height: 15px;
+}
+
+/*  PARTIE Myriam - PC */
+h1{
+	color:#324FA1;
+}
+
+h2{
+	color:#324FA1;
+}
+
+#titre{
+	text-align: center;
+}
+
+.img_anniv{
+	text-align: center;
+	padding:15px;
+}
+
+.img_anniv img {
+	margin: auto;
+	width: 60%;
+}
+
+.h2_histoire {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#vidéo{
+	text-align:center;
+}
+
+#vid{
+	margin: auto;
+	width:60%;
+	height: auto;
+}
+
+iframe {
+    border-width: 0px;
+}
+
+#liste1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width : 100%;
+	justify-content: space-around;
+	margin-top: 50px;
+
+}
+
+#liste2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width : 100%;
+	justify-content: space-around;
+
+}
+
+.description{
+	display: none;
+}
+
+.pokémon2{
+
+}
+
+.pokémon1:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+
+.pokémon2:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+.pokémon3:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+.pokémon4:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+.pokémon5:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+.pokémon6:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* height:24%; */
+		width: 223px;
+}
+
+.pokémon7:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		/* <!--height:24%;--!>  */
+		width: 223px;
+}
+
+.pokémon8:hover .description{
+		display: block;
+		border: solid 1px;
+		position: absolute;
+		background-color:white;
+		width: 223px;
+}
+
+.gras{
+	font-weight: bold;
+}
+
+/*  PC - FOOTER */
+footer {
+  background-color: grey;
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+div.footerdiv a {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+footer div.auteurs {
+  margin-top: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  width: 100%;
+}
+
+footer div.auteurs p {
+  margin-right: 2em;
+}
+
+footer div.copyright {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer div.footer-img {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+  border-radius: 0;
+  margin-bottom: 2em;
+}
+
+footer div.copyright {
+  margin-top: 1em;
+  text-align: center;
+}
+footer div.copyright p {
+  margin-bottom: 2em;
+}
+
+#sources {
+	margin-bottom: 1em;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	font-size: 0.9em;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	text-decoration: underline;
+	margin-bottom: 2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* PARTIE PIERRE - PC */
+/*  CSS PIERRE */
+
+.grand_conteneur {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex:1;
+	margin : auto;
+	width: 100%;
+}
+
+button.panneau{
+	border: none;
+	background:none;
+}
+
+.panneau{
+	flex : 1 1 0%;
+	width : 23%;
+	min-width: 0;
+	text-align: center;
+	display: flex;
+	overflow: hidden;
+}
+
+	#height_console{
+		min-height: auto;
+	}
+	.panneau:focus {
+		display: flex;
+		flex-direction: row;
+		flex-basis: 100%;
+		transition: flex-basis;
+		transition: margin-right 1s;
+
+		}
+
+	.panneau:hover{
+		background-color: #5353530d;
+	}
+
+	.panneau_console{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		flex-shrink:0;
+		min-width: 0;
+	}
+
+	.panneau:focus .panneau_console{
+		width: 25%;
+		flex-shrink:0;
+	}
+		.panneau_console_illustration{
+			height:auto;
+			width:60%;
+			margin:auto;
+			padding-bottom: 0px;
+			min-width: 0;
+		}
+
+		#gameboy {
+			width: 55%;
+			height: auto;
+		}
+
+		#nintendo_ds {
+			width: 70%;
+		}
+
+		#switch {
+			width: 70%;
+			height: auto;
+		}
+
+		#telephone {
+			width: 45%;
+			height: auto;	
+		}
+		.bouton_console{
+			padding-top: 0px;
+			margin-top: 5px;
+			margin-bottom: 20%;
+			margin-left: auto;
+			margin-right: auto;
+			min-width: 0;
+			min-height: 50%;
+		}
+
+		.grand_conteneur_panneau_text{ 
+			display: none;
+		}
+
+		.panneau:focus .grand_conteneur_panneau_text{
+			display: block;
+			margin:auto;
+		}
+
+		.grand_conteneur_panneau_text_paragraph{
+			display: flex;
+			text-align: justify;
+			margin: 10px;
+		}
+
+		.grand_conteneur_panneau_text_paragraph img{
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			margin-top: 0px;
+		}
+
+.createur {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	background: rgba(255,255,255, 0.6);
+}
+
+	.createur_photo {
+		height : auto;
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+		.createur_photo img{
+			width: 90%;
+			height : auto;
+			margin-left: 0%;
+		}
+
+		.copyright_mobile {
+		display: block;
+		font-size: 8px;
+		color: grey;
+
+	}
+
+	#copyright_auteur_site {
+		margin-left: 5%;
+	}
+
+	#copyright_auteur_mobile{
+		display: none;
+	}
+	.createur_textes {
+		
+		display: flex;
+		flex-direction: column;
+		flex : 1;
+		margin: 0;
+	}
+
+		.createur_texte_derouleur {
+			
+			height: 10%;
+			width: 95%;
+			margin: 1% auto;
+			display: flex;
+			flex-direction: column;
+
+		}
+
+			.createur_texte_derouleur {
+				border: none;
+				width: 100%;
+				text-align: left;
+			}
+
+			.createur_texte_derouleur_titre_texte {
+				margin-left: 0;
+				font-weight: bold;
+				font-size: 1.6em;
+				margin-top: 2px;
+			
+			}
+			
+			.createur_texte_derouleur_contenu {
+				display: none;
+			}
+
+			.createur_texte_derouleur:focus {
+				flex-basis: content;
+			}
+
+			.createur_texte_derouleur:focus .createur_texte_derouleur_contenu {
+				display: block;
+				margin-top: 0%;
+				text-align: justify;
+				line-height: 1.6;
+			}
+		
+			.source {
+				font-weight: lighter;
+				font-size:80%;
+				color: grey;
+			}
+
+			.source a, .source a:visited{
+				text-decoration: none;
+				color:grey;
+			}
+	
+
+/* [SUR MOBILE] */
+@media screen and (max-width: 768px) {
+  /* PARTIE SAMUEL - MOBILE */
+  /* MOBILE - RENDRE LE MENU VERTICAL */
+
+  #hamitems a {
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+	min-height: fit-content;
+    /*border-top: 1px solid #333;*/
+  }
+
+  /* MOBILE - AFFICHER LE LOGO */
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    padding: 0px;
+    margin-left: 20px;
+    width: auto;
+    font-size: 3em;
+  }
+
+  #hamnav label img {
+    height: 80px;
+    width: auto;
+  }
+
+  /*  MOBILE - MONTRER / CACHER LE MENU */
+  #hamitems {
+    display: none;
+  }
+
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+    background-color: #333;
+	padding: 1em;
+	min-height: fit-content;
+  }
+
+  #hamnav input:checked ~ #hamitems a {
+    width: auto;
+	padding: 1em;
+  }
+
+  /* CARTES TYPES REPONSIVES */
+
+  div.type-responsive {
+    flex-direction: column;
+  }
+
+  div.type {
+    width: 80%;
+    display: flex;
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: 2em;
+    margin-bottom: 2.2em;
+    margin-left: 10%;
+  }
+
+  /* PARTIE PIERRE - MOBILE */
+	
+	.grand_conteneur {
+		flex-direction: column;	
+	}
+
+	.panneau{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		background: none;
+	}
+
+	.panneau:focus {
+		flex-direction: column;
+	}
+
+	.panneau:focus .panneau_console {
+		margin-left: auto;
+		margin-right: auto;
+		width : 100%;
+	}
+
+	.panneau_console_illustration {
+		margin-top: 10%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.createur {
+		flex-direction: column;
+	}
+
+	.createur_photo img {
+		display: none;
+	}
+
+	.createur_photo {
+		height: 250px;
+		width: 100%;
+		background-image: url("../images/createur_cropped.jpg");
+	}
+
+	#copyright_auteur_mobile{
+		display: block;	
+	}
+
+	#copyright_auteur_site{
+		display: none;
+	}
+}
+
+/* PARTIE - PC 1035px */
+@media screen and (max-width: 1035px) {
+  div.section-card {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  p {
+    font-size: 1.2em;
+  }
+
+  div.footerdiv a {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  div.footer-info {
+    display: flex;
+    font-size: 1.25em;
+  }
+
+  div.footer div.copyrigth {
+    margin-top: 0em;
+  }
+
+  footer div.auteurs p {
+    margin: 0;
+    margin-right: 2em;
+  }
+
+  #hamitems a {
+    font-size: 1.3em;
+  }
+}
