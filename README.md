@@ -7,6 +7,8 @@ I-PROJETS PERSONNELS
  
 Pris d'un fort interet pour la programmation et admiratif de domaine informatique en général je décide à la suite de ces projets de candidater en DUT Informatique à l'IUT Paul Sabatier. J'ai eu la chance d'etre retenu en année spéciale, une session particulière pour les titulaires d'un BAC+2 ou +.
 
+J'ai récemment inclus ma version minimaliste du jeu WORDLE (ou SUTOM) en francais. Mes camarades de classes jouant souvent en classe j'ai décidé de leur programmer le jeu (ur 5 lettres pour l'instant) afin qu'ils n'aient pas à attendre le lendemain pour un nouveau mot. J'expliquerais prochainement la marche a suivre pour initialiser les mots.
+
 II-PROJETS ET PRATIQUES UNIVERSITAIRES
 
 J'ai inclus les TP ainsi que les TD sur les différents sujets abordés jusqu'a présent. Nous avons utilisé le language Java sur l'environnement Eclipse.
